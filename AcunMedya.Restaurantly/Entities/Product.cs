@@ -11,6 +11,6 @@ namespace AcunMedya.Restaurantly.Entities
         public string Name { get; set; }
         public string Descriptiion{ get; set; }
         public decimal Price { get; set; }
-        public string İmageUrl { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
