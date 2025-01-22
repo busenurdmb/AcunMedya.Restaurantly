@@ -124,6 +124,7 @@
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
+    <Compile Include="Entities\Contact.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
