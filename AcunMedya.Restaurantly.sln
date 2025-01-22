@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcunMedya.Restaurantly", "AcunMedya.Restaurantly\AcunMedya.Restaurantly.csproj", "{B2BA7AA4-EDB8-48C0-ACA2-AD4A34A45040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2BA7AA4-EDB8-48C0-ACA2-AD4A34A45040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BA7AA4-EDB8-48C0-ACA2-AD4A34A45040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BA7AA4-EDB8-48C0-ACA2-AD4A34A45040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BA7AA4-EDB8-48C0-ACA2-AD4A34A45040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59310934-3B88-485D-94D9-CF2C62C98E36}
+	EndGlobalSection
+EndGlobal
