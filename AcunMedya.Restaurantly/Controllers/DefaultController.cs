@@ -31,5 +31,13 @@ namespace AcunMedya.Restaurantly.Controllers
         {
             return PartialView();
         }
+
+        public PartialViewResult PartialFeature()
+        {
+            ViewBag.SubTitle=Db.Features.Select(x=>x.SubTitle).FirstOrDefault();
+            ViewBag.Title=Db.Features.Select(x=>x.Title).FirstOrDefault();
+            ViewBag.VideUrl = Db.Features.Select(x=>x.VideoUrl).FirstOrDefault();
+            return PartialView();
+        }
     }
 }
