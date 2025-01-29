@@ -15,24 +15,12 @@
                     {
                     <li data-filter=".filter-@category.ToLower().Replace(" ","-")">@category</li>
                     }
-                    
-                    @*<li data-filter=".filter-salads">Salads</li>
-                    <li data-filter=".filter-specialty">Specialty</li>*@
                 </ul>
             </div>
         </div>
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-6 menu-item filter-starters">
-                <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Lobster Bisque</a><span>$5.95</span>
-                </div>
-                <div class="menu-ingredients">
-                    Lorem, deren, trataro, filede, nerada
-                </div>
-            </div>
             @foreach (var item in Model)
             {
                 <div class="col-lg-6 menu-item filter-@item.Category.CategoryName.ToLower().Replace(" ","-")">
