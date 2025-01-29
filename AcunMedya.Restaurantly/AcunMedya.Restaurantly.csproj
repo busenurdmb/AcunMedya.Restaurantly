@@ -306,6 +306,9 @@
     <Content Include="Template\Restaurantly\assets\vendor\boxicons\fonts\boxicons.woff" />
     <Content Include="Template\Restaurantly\assets\vendor\boxicons\fonts\boxicons.woff2" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\PartialHead.cshtml" />
+    <Content Include="Views\Default\PartialTop.cshtml" />
+    <Content Include="Views\Default\PartialNavbar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
