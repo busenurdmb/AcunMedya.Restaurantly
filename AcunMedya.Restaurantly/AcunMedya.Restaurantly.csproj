@@ -316,6 +316,7 @@
     <Content Include="Views\Default\PartialFeature.cshtml" />
     <Content Include="Views\Default\PartialAbout.cshtml" />
     <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
