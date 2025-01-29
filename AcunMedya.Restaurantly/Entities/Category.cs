@@ -9,5 +9,7 @@ namespace AcunMedya.Restaurantly.Entities
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
+
+       
     }
 }
