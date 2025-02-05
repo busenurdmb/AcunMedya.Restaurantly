@@ -5536,6 +5536,9 @@
     <Content Include="Template\quixlab-master\plugins\typeahedjs\dist\nhl.json" />
     <Content Include="Views\AdminLayout\PartialHead.cshtml" />
     <Content Include="Views\AdminLayout\PartialNavbar.cshtml" />
+    <Content Include="Views\AdminLayout\PartialSidebar.cshtml" />
+    <Content Include="Views\AdminLayout\PartialFooter.cshtml" />
+    <Content Include="Views\AdminLayout\PartialScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
