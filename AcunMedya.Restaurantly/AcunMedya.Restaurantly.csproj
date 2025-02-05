@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -175,6 +176,18 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Template\colorlib-error-404-12\colorlib-error-404-12\css\style.css" />
+    <Content Include="Template\colorlib-error-404-12\colorlib-error-404-12\img\emoji.png" />
+    <Content Include="Template\colorlib-error-404-12\colorlib-error-404-12\index.html" />
+    <Content Include="Template\colorlib-error-404-12\colorlib-error-404-12\readme.txt" />
+    <Content Include="Template\colorlib-error-404-12\css\style.css" />
+    <Content Include="Template\colorlib-error-404-12\img\emoji.png" />
+    <Content Include="Template\colorlib-error-404-12\index.html" />
+    <Content Include="Template\colorlib-error-404-12\readme.txt" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._index.html" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._readme.txt" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\css\._style.css" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\img\._emoji.png" />
     <Content Include="Template\quixlab-master\app-calender.html" />
     <Content Include="Template\quixlab-master\app-profile.html" />
     <Content Include="Template\quixlab-master\blank.html" />
@@ -5541,6 +5554,10 @@
     <Content Include="Views\AdminLayout\PartialScript.cshtml" />
     <Content Include="Views\Category\CategoryCreate.cshtml" />
     <Content Include="Views\Category\CategoryEdit.cshtml" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\._colorlib-error-404-12" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._css" />
+    <Content Include="Template\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._img" />
+    <Content Include="Views\ErrorPage\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
