@@ -11,7 +11,7 @@
     <div class="col p-md-0">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Menü</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Menü  kullanıcı adı = @ViewBag.username</a></li>
         </ol>
     </div>
 </div>
@@ -46,29 +46,29 @@
                                 @foreach (var item in Model)
                                 {
                                     count++;
-                                <tr>
-                                    <th>@count</th>
-                                    <td>@item.Name</td>
-                                    <td>@item.Descriptiion</td>
-                                    <td>@item.Price</td>
-                                    <td>@item.Category.CategoryName</td>
-                                    <td><img src="@item.ImageUrl" style="widht:100px; height:100px" /></td>
+                                    <tr>
+                                        <th>@count</th>
+                                        <td>@item.Name</td>
+                                        <td>@item.Descriptiion</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.Category.CategoryName</td>
+                                        <td><img src="@item.ImageUrl" style="widht:100px; height:100px" /></td>
 
-                                    <td>
-                                        <a href="/Product/ProductDelete/@item.ProductId" class="btn btn-danger">
-                                            <i class="fa fa-close color-muted m-r-5"></i>
-                                            Sil
-                                        </a>
-                                    </td>
-                                    <td><a href="/Product/ProductEdit/@item.ProductId" class="btn btn-info gradient-2"><i class="fa fa-edit color-muted m-r-5"></i> Güncelle</a></td>
+                                        <td>
+                                            <a href="/Product/ProductDelete/@item.ProductId" class="btn btn-danger">
+                                                <i class="fa fa-close color-muted m-r-5"></i>
+                                                Sil
+                                            </a>
+                                        </td>
+                                        <td><a href="/Product/ProductEdit/@item.ProductId" class="btn btn-info gradient-2"><i class="fa fa-edit color-muted m-r-5"></i> Güncelle</a></td>
 
-                                </tr>
+                                    </tr>
                                 }
 
 
                             </tbody>
                         </table>
-                        <a href="/Category/CategoryCreate" class="btn btn-success">Kategori Ekle</a>
+                        <a href="/Product/ProductCreate" class="btn btn-success">Kategori Ekle</a>
                     </div>
                 </div>
             </div>

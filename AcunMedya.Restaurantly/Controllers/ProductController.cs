@@ -8,21 +8,30 @@ using System.Web.Mvc;
 
 namespace AcunMedya.Restaurantly.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         RestaurantlyContext Db = new RestaurantlyContext();
         // GET: Product
   
-
+       
         public ActionResult ProductList()
         {
 
             var value = Db.Products.ToList();
+            ViewBag.username = Session["a"];
             return View(value);
         }
         [HttpGet]
         public ActionResult ProductCreate()
         {
+            List<SelectListItem> values = (from x in Db.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View();
         }
         [HttpPost]
@@ -36,23 +45,35 @@ namespace AcunMedya.Restaurantly.Controllers
         [HttpGet]
         public ActionResult ProductEdit(int id)
         {
-            var value = Db.Categories.Find(id);
+            var value = Db.Products.Find(id);
+
+            List<SelectListItem> values = (from x in Db.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View(value);
         }
 
         [HttpPost]
         public ActionResult ProductEdit(Product model)
         {
-            var values = Db.Categories.Find(model.ProductId);
-            //values.ProductName = model.ProductName;
+            var values = Db.Products.Find(model.ProductId);
+            values.Name = model.Name;
+            values.Descriptiion = model.Descriptiion;
+            values.Price = model.Price;
+            values.ImageUrl = model.ImageUrl;
+            values.CategoryId = model.CategoryId;
             Db.SaveChanges();
             return RedirectToAction("ProductList");
         }
 
         public ActionResult ProductDelete(int id)
         {
-            var value = Db.Categories.Find(id);
-            Db.Categories.Remove(value);
+            var value = Db.Products.Find(id);
+            Db.Products.Remove(value);
             Db.SaveChanges();
             return RedirectToAction("ProductList");
         }
