@@ -95,7 +95,7 @@
                                 @foreach (var item in Model)
                                 {
                                     <li>
-                                        <a href="javascript:void()">
+                                        <a href="/AdminLayout/NotificationStatusChangeToTrue/@item.NotificationId">
                                             <span class="mr-3 avatar-icon bg-success-lighten-2" style="background-color:@item.Iconcolor"><i class="@item.Icon"></i></span>
                                             <div class="notification-content">
                                                 <h6 class="notification-heading">@item.Title</h6>

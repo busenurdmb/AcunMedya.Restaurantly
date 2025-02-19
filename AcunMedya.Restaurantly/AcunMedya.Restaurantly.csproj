@@ -136,6 +136,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -163,6 +164,10 @@
     <Compile Include="Migrations\202502191712478_mig3.cs" />
     <Compile Include="Migrations\202502191712478_mig3.designer.cs">
       <DependentUpon>202502191712478_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502191814230_mig4.cs" />
+    <Compile Include="Migrations\202502191814230_mig4.designer.cs">
+      <DependentUpon>202502191814230_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -5683,6 +5688,7 @@
     <Content Include="Template\Login_v1\vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="Views\Dahboard\Index.cshtml" />
     <Content Include="Views\Dahboard\ReservasionPartial.cshtml" />
+    <Content Include="Views\Profiles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -5710,6 +5716,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502191712478_mig3.resx">
       <DependentUpon>202502191712478_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502191814230_mig4.resx">
+      <DependentUpon>202502191814230_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

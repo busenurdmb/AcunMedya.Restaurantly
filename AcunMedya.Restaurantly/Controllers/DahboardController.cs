@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace AcunMedya.Restaurantly.Controllers
 {
+    [Authorize]
     public class DahboardController : Controller
     {
         RestaurantlyContext Db = new RestaurantlyContext();
