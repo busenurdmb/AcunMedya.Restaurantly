@@ -19,5 +19,15 @@ namespace AcunMedya.Restaurantly.Entities
         [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
 
+
+        [NotMapped]
+        public string CurrentPasword { get; set; }
+
+        [NotMapped]
+        public string NewPasword { get; set; }
+
+        [NotMapped]
+        public string ConfirmPasword { get; set; }
+
     }
 }

@@ -58,5 +58,42 @@ namespace AcunMedya.Restaurantly.Controllers
 
            return RedirectToAction("Index", "Dahboard");
         }
+
+        // GET: Profiles
+        [HttpGet]
+        public ActionResult ChangePassword()
+        {
+            if (Session["id"] == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ChangePassword(Admin p)
+        {
+            if (Session["id"] == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            var value = Db.Admins.Find(Session["id"]);
+            if (p.CurrentPasword != value.Password)
+            {
+                ModelState.AddModelError("", "Mevcut şifre hatalı");
+                return View(p);
+            }
+
+            if(p.NewPasword != p.ConfirmPasword)
+            {
+                ModelState.AddModelError("", "Yeni Şifreler eşleşmiyor");
+                return View(p);
+            }
+
+            value.Password = p.NewPasword;
+            Db.SaveChanges();
+            return RedirectToAction("Index", "Login");
+        }
     }
 }

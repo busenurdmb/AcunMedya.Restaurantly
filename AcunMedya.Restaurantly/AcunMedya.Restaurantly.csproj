@@ -5689,6 +5689,7 @@
     <Content Include="Views\Dahboard\Index.cshtml" />
     <Content Include="Views\Dahboard\ReservasionPartial.cshtml" />
     <Content Include="Views\Profiles\Index.cshtml" />
+    <Content Include="Views\Profiles\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
