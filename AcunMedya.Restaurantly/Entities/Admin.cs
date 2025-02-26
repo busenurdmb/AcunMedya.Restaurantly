@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -15,7 +16,8 @@ namespace AcunMedya.Restaurantly.Entities
         public string ImageUrl { get; set; }
         public string Email { get; set; }
 
-        
+        [NotMapped]
+        public HttpPostedFileBase ImageFile { get; set; }
 
     }
 }
